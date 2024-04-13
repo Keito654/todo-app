@@ -4,6 +4,10 @@ export default antfu({
   stylistic: {
     semi: true,
   },
-  typescript: true,
   react: true,
+  ignores: [
+    'tsconfig.json',
+    'tsconfig.node.json',
+    'vite.config.ts',
+  ],
 });
