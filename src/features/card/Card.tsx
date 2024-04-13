@@ -1,5 +1,5 @@
-import { Card as MuiCard, CardContent, Typography } from "@mui/material";
-import type { FC } from "react";
+import { CardContent, Card as MuiCard, Typography } from '@mui/material';
+import type { FC } from 'react';
 
 const Card: FC = () => (
   <MuiCard>

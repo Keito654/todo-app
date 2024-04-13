@@ -1,18 +1,18 @@
-import type { FC } from "react";
-import Grid from "@mui/material/Unstable_Grid2";
-import { Box, Container } from "@mui/material";
-import type React from "react";
-import Header from "features/header/Header";
+import type { FC } from 'react';
+import Grid from '@mui/material/Unstable_Grid2';
+import { Box, Container } from '@mui/material';
+import type React from 'react';
+import Header from 'features/header/Header';
 
-type Props = {
-  children: React.ReactNode;
-};
+interface Props {
+  children: React.ReactNode
+}
 
 export const Layout: FC<Props> = ({ children }) => (
   <>
     <Box
       sx={{
-        marginBottom: (theme) => theme.spacing(2),
+        marginBottom: theme => theme.spacing(2),
       }}
     >
       <Header />

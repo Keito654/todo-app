@@ -1,6 +1,6 @@
-import type { FC } from "react";
-import { Layout } from "./common/layout/Layout";
-import TopPage from "./pages/TopPage";
+import type { FC } from 'react';
+import { Layout } from './common/layout/Layout';
+import TopPage from './pages/TopPage';
 
 const App: FC = () => {
   return (
