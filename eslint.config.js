@@ -1,8 +1,9 @@
 import antfu from '@antfu/eslint-config';
 
 export default antfu({
-  rules: {
-    'style/semi': ['error', 'always'],
+  stylistic: {
+    semi: true,
   },
+  typescript: true,
   react: true,
 });
