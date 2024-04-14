@@ -1,5 +1,4 @@
 import { Container, Paper, Stack, Toolbar } from '@mui/material';
-import Card from 'features/card/Card';
 import AddTodoInputField from 'features/textFields/AddTodoTextFiled';
 import TodoList from 'features/todo/TodoList';
 import { type FC, Suspense } from 'react';

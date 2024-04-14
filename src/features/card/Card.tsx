@@ -1,4 +1,4 @@
-import { CardContent, Checkbox, FormControlLabel, Card as MuiCard, Typography } from '@mui/material';
+import { CardContent, Checkbox, FormControlLabel, Card as MuiCard } from '@mui/material';
 import type { Todo } from 'common/types/todo';
 import type { FC } from 'react';
 

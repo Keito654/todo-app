@@ -1,4 +1,4 @@
-import { AppBar, Box, Container, Toolbar, Typography } from '@mui/material';
+import { AppBar, Container, Toolbar, Typography } from '@mui/material';
 import type { FC } from 'react';
 
 const Header: FC = () => {
