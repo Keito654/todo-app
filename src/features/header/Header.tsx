@@ -3,8 +3,8 @@ import type { FC } from 'react';
 
 const Header: FC = () => {
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="sticky">
+    <>
+      <AppBar>
         <Toolbar
           variant="dense"
           sx={{
@@ -21,7 +21,7 @@ const Header: FC = () => {
           </Container>
         </Toolbar>
       </AppBar>
-    </Box>
+    </>
   );
 };
 

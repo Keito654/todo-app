@@ -1,15 +1,23 @@
-import Grid2 from '@mui/material/Unstable_Grid2';
+import { Container, Paper, Stack, Toolbar } from '@mui/material';
 import Card from 'features/card/Card';
-import AddButton from 'features/fabButton/AddButton';
-import type { FC } from 'react';
+import AddTodoInputField from 'features/textFields/AddTodoTextFiled';
+import TodoList from 'features/todo/TodoList';
+import { type FC, Suspense } from 'react';
 
 const TopPage: FC = () => {
   return (
     <>
-      <Grid2 xs={4} sm={8} md={12}>
-        <Card />
-      </Grid2>
-      <AddButton />
+      <Suspense fallback={<p>loading...</p>}>
+        <Stack spacing={2}>
+          <TodoList />
+        </Stack>
+      </Suspense>
+      <Toolbar sx={{ marginBlock: theme => theme.spacing(4) }} />
+      <Paper elevation={3} sx={{ position: 'fixed', bottom: 0, left: 0, right: 0, paddingBlock: theme => theme.spacing(2, 4) }}>
+        <Container>
+          <AddTodoInputField />
+        </Container>
+      </Paper>
     </>
   );
 };

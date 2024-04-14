@@ -1,10 +1,13 @@
-import { CardContent, Card as MuiCard, Typography } from '@mui/material';
+import { CardContent, Checkbox, FormControlLabel, Card as MuiCard, Typography } from '@mui/material';
+import type { Todo } from 'common/types/todo';
 import type { FC } from 'react';
 
-const Card: FC = () => (
+type Props = Pick<Todo, 'title' | 'completed'>;
+
+const Card: FC<Props> = ({ title, completed }) => (
   <MuiCard>
     <CardContent>
-      <Typography variant="body1">aaa</Typography>
+      <FormControlLabel control={<Checkbox checked={completed} />} label={title} />
     </CardContent>
   </MuiCard>
 );
